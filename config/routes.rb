@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get "posts/:id" => "posts#show"
   post "posts/create" => "posts#create"
   
-  get 'home/top'
+  get  "top" => "home#top"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'home/about'
+  get "about" => "home#about"
 end
